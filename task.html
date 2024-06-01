@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Inventory</title>
+<link rel="stylesheet" href="task.css">
+<script src="task.js"></script>
+</head>
+<body>
+
+<h2>Product Inventory</h2>
+
+<table id="productTable">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+        </tr>
+        <tr >
+            <td>
+                this
+            </td>
+            
+            <td>
+                54
+            </td>
+            
+            <td>
+                6
+            </td>
+            
+            <td>
+                <button onclick="editProduct(this.parentNode.parentNode)">Edit</button>
+                <button onclick="deleteProduct(this.parentNode.parentNode)" class="btn-delete">Delete</button>
+
+            </td>
+        </tr>
+
+            <tr>
+
+             <td>
+                this
+            </td>
+            
+            <td>
+                54
+            </td>
+            
+            <td>
+                6
+            </td>
+            
+            <td>
+                <button onclick="editProduct(this.parentNode.parentNode)">Edit</button>
+                <button onclick="deleteProduct(this.parentNode.parentNode)" class="btn-delete">Delete</button>
+
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<form id="addProductForm">
+    <label for="productName">Product Name:</label><br>
+    <input type="text" id="productName" name="productName" required><br>
+    <label for="price">Price:</label><br>
+    <input type="number" id="price" name="price" step="0.01" required><br>
+    <label for="quantity">Quantity:</label><br>
+    <input type="number" id="quantity" name="quantity" step="1" required><br><br>
+    <button type="button" onclick="validateForm()">Add Product</button>
+</form>
+
+
+</body>
+</html>
